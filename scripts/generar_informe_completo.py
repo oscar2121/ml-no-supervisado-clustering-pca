@@ -14,7 +14,7 @@ from reportlab.platypus import (
 )
 from reportlab.pdfgen import canvas
 
-BASE_DIR = r"C:\Users\oscar\.gemini\antigravity\scratch\ml_no_supervisado"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIG_DIR = os.path.join(BASE_DIR, "figures")
 DOCX_OUT = os.path.join(BASE_DIR, "Informe_Machine_Learning_No_Supervisado.docx")
 PDF_OUT = os.path.join(BASE_DIR, "Informe_Machine_Learning_No_Supervisado.pdf")

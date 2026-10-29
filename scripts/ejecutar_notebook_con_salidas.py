@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-BASE_DIR = r"C:\Users\oscar\.gemini\antigravity\scratch\ml_no_supervisado"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NOTEBOOK_PATH = os.path.join(BASE_DIR, "notebooks", "Machine_Learning_No_Supervisado_Clustering_PCA_SVD.ipynb")
 
 def run_notebook_and_populate_outputs():

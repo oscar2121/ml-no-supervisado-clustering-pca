@@ -11,7 +11,8 @@ from sklearn.decomposition import PCA, TruncatedSVD
 from sklearn.cluster import KMeans, AgglomerativeClustering
 from scipy.cluster.hierarchy import dendrogram, linkage
 
-OUT_DIR = r"C:\Users\oscar\.gemini\antigravity\scratch\ml_no_supervisado\figures"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT_DIR = os.path.join(BASE_DIR, "figures")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 plt.style.use('seaborn-v0_8-whitegrid' if 'seaborn-v0_8-whitegrid' in plt.style.available else 'default')
